@@ -4,7 +4,7 @@ This repository contains solutions to a comprehensive set of programming exercis
 
 ## 📘 Course Details
 
-- **Student Name**: Alexandru Marustri
+- **Student Name**: Alexandru Marusteri
 - **Year**: 2nd Year, BSc in Computer Science (English)
 - **Faculty**: Faculty of Exact Sciences
 - **University**: "Aurel Vlaicu" University of Arad
