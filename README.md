@@ -6,6 +6,7 @@ This repository contains solutions to a comprehensive set of programming exercis
 
 - **Student Name**: Alexandru Marustri
 - **Year**: 2nd Year, BSc in Computer Science (English)
+- **Faculty**: Faculty of Exact Sciences
 - **University**: "Aurel Vlaicu" University of Arad
 - **Subject**: Visual Programming Environments
 
@@ -73,7 +74,7 @@ This repository contains solutions to a comprehensive set of programming exercis
 ## 💻 Requirements
 
 - .NET SDK
-- Visual Studio or Rider
+- Rider
 - xUnit (for Unit Testing)
 - Windows Forms-compatible environment (for GUI apps)
 
