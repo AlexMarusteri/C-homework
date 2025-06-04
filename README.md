@@ -1,4 +1,4 @@
-# C# & .NET Homework Solutions
+# Visual Programming Environments Exercises
 
 This repository contains solutions to a comprehensive set of programming exercises covering multiple chapters in C# and .NET, as part of the Visual Programming Environments course.
 
