@@ -1,0 +1,43 @@
+using Xunit;
+using Bank;
+using System;
+
+public class BankAccountTests
+{
+    [Fact]
+    public void Debit_WithValidAmount_UpdatesBalance()
+    {
+        var account = new BankAccount("Test User", 100m);
+        account.Debit(40m);
+        Assert.Equal(60m, account.Balance);
+    }
+
+    [Fact]
+    public void Debit_WhenAmountIsLessThanZero_Throws()
+    {
+        var account = new BankAccount("Test User", 100m);
+        Assert.Throws<ArgumentOutOfRangeException>(() => account.Debit(-10m));
+    }
+
+    [Fact]
+    public void Debit_WhenAmountIsMoreThanBalance_Throws()
+    {
+        var account = new BankAccount("Test User", 100m);
+        Assert.Throws<InvalidOperationException>(() => account.Debit(150m));
+    }
+
+    [Fact]
+    public void Credit_WithValidAmount_UpdatesBalance()
+    {
+        var account = new BankAccount("Test User", 100m);
+        account.Credit(50m);
+        Assert.Equal(150m, account.Balance);
+    }
+
+    [Fact]
+    public void Credit_WithNegativeAmount_Throws()
+    {
+        var account = new BankAccount("Test User", 100m);
+        Assert.Throws<ArgumentOutOfRangeException>(() => account.Credit(-20m));
+    }
+}
